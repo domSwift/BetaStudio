@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.betastudio">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BetaStudio.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ApplicationWindows.DoctorMgmtFE.SortedRequestDetail"
+            android:exported="false" />
+        <activity
+            android:name=".ApplicationWindows.DoctorMgmtFE.SortedRequests"
+            android:exported="false" />
+        <activity
+            android:name=".ApplicationWindows.PatientMgmtFE.ModifyMyData"
+            android:exported="false" />
+        <activity
+            android:name=".ApplicationWindows.PatientMgmtFE.MyRequests"
+            android:exported="false" />
+        <activity
+            android:name=".ApplicationWindows.PatientMgmtFE.MakeRequest"
+            android:exported="false" />
+        <activity
+            android:name=".ApplicationWindows.DoctorMgmtFE.MyPatients"
+            android:exported="false" />
+        <activity
+            android:name=".ApplicationWindows.DoctorMgmtFE.NewPatientDetail"
+            android:exported="false" />
+        <activity
+            android:name=".ApplicationWindows.DoctorMgmtFE.NewPatientsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ApplicationWindows.AuthMgmtFE.FirstPageActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- .RegistrationChoice -->
+        <activity
+            android:name=".ApplicationWindows.AuthMgmtFE.RegistrationChoiceActivity"
+            android:exported="false" /> <!-- .Login -->
+        <activity
+            android:name=".ApplicationWindows.AuthMgmtFE.LoginActivity"
+            android:exported="false" /> <!-- .DoctorRegistration -->
+        <activity
+            android:name=".ApplicationWindows.DoctorMgmtFE.DoctorRegistrationActivity"
+            android:exported="false" /> <!-- .PatientRegistration -->
+        <activity
+            android:name=".ApplicationWindows.PatientMgmtFE.PatientRegistrationActivity"
+            android:exported="false" /> <!-- .DoctorFirstPage -->
+        <activity
+            android:name=".ApplicationWindows.DoctorMgmtFE.DoctorFirstPageActivity"
+            android:exported="false" /> <!-- .DoctorFirstPage -->
+        <activity
+            android:name=".ApplicationWindows.PatientMgmtFE.PatientFirstPageActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

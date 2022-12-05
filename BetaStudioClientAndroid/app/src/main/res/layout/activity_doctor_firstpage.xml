@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="411dp"
+        android:layout_height="165dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/logo_app"
+        android:paddingVertical="35dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/patientsListButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/patientsListButton"
+        android:layout_width="390dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#3F51B5"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/lista_miei_pazienti"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/goAlgo"
+        android:layout_width="390dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#3F51B5"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/gestione_richieste_ricevute"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientsListButton" />
+
+    <Button
+        android:id="@+id/acceptPatientsButton"
+        android:layout_width="390dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#3F51B5"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/nuovi_pazienti"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goAlgo" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#3F51B5"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/logoutbutton"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
